@@ -1,0 +1,237 @@
+
+/* All pages */
+* { /* Styles all elements */
+    font-family: Arial, sans-serif; /* Makes all text on the page Arial */
+    color: #000000; /* Makes all text on the page black */
+    background-color: #e2dddd; /* Makes the background colour of the page light grey to be easier on eyes */
+}
+
+p{ /* Styles all p tags */
+  font-size: 20px; /* Makes the font size of anything with a p tag 20px */
+  text-align: center; /* Centers anything with a p tag */
+}
+
+h2 { /* Styles all h2 tags */
+  font-size: 30px; /* Makes the font size of anything with a h2 tag 30px */
+  text-align: center; /* Centers anything with a h2 tag */
+  margin-top: 40px; /* Adds a margin of 40px to the top of anything with a h2 tag */
+  margin-bottom: 20px; /* Adds a margin of 20px to the bottom of anything with a h2 tag */
+}
+
+
+header { /* Styles the header */
+    font-weight: bold; /* Makes the font weight of everything in the header bold */
+    text-align: center; /* Centers everything in the header */
+    margin: 0; /* Removes the margin from the header */
+    padding: 10px 10px; /* Adds padding of 10px to the top and bottom of the header and 10px to the left and right of the header */
+    border-bottom: 1px solid #000; /* Adds a border to the bottom of the header */
+    border-top: 1px solid #000; /* Adds a border to the top of the header */
+  }
+
+  nav { /* Styles the nav bar */
+    top: 0; /* Sets the top of the nav bar to 0 */
+    left: 0; /* Sets the left of the nav bar to 0 */
+    width: 100%; /* Sets the width of the nav bar to 100% */
+    z-index: 9999; /* Sets the z-index of the nav bar to 9999 which brings it to the front as I had trouble with it being hidden by other elements */
+  }
+  
+  .header-top { /* Styles the header-top which is where the clickable logo is */
+    display: flex; /* Makes the header-top a flex box */
+    justify-content: center; /* Centers the content of the header-top */
+    align-items: center; /* Centers the items of the header-top */
+  }
+
+  .menu { /* Styles the menu */
+    list-style-type: none; /* Removes the bullet points from the nav bar */
+  }
+
+  .business-info { /* Styles the business-info which is where the logo and title are */
+    margin: 0 20px; /* Adds a margin of 0 to the top and bottom of the business-info and 20px to the left and right of the business-info to provide distance between the logo and the title */
+    text-align: center; /* Centers the business-info */
+  }
+
+  .logo { /* Styles the logo */
+    width: 80px; /* Sets the width of the logo to 80px */
+    height: 94px; /* Sets the height of the logo to 94px */
+  }
+
+  h1, h2 { /* Styles the h1 and h2 */
+    margin: 0; /* Removes the margin from the h1 and h2 */
+  }
+   
+  h1 { /* Styles the h1 */
+    font-size: 50px; /* Sets the font size of the h1 to 50px */
+  }
+  
+  .Phone { /* Styles the phone number */
+    font-size: 20px; /* Sets the font size of the phone number to 20px */
+  }
+  
+  h2{ /* Styles the h2 */
+    font-size: 30px; /* Sets the font size of the h2 to 30px */
+    text-align: center; /* Centers the h2 */
+  }
+
+  
+  .menu a { /* Styles the menu links */
+    text-decoration: none; /* Removes the underline from the menu links */
+    display: inline-block; /* Makes the menu links inline-blocks */
+    padding: 10px 20px; /* Adds padding of 10px to the top and bottom of the menu links and 20px to the left and right of the menu links */
+  }
+  
+  .menu a:hover { /* Styles the menu links when hovered over */
+    background-color: #666; /* Changes the background colour of the menu links to grey when hovered over */
+    color: #fff; /* Changes the colour of the menu links to white when hovered over */
+  }
+
+  footer { /* Styles the footer */
+    border-top: 1px solid #000; /* Adds a border to the top of the footer */
+    padding: 10px 0; /* Adds padding of 10px to the top and bottom of the footer and 0 to the left and right of the footer */
+    text-align: center; /* Centers the footer */
+  }
+
+/* Home page */
+
+.Slogan{ /* Styles the slogan */
+  text-align: center; /* Centers the slogan */
+  font-size: 20px; /* Sets the font size of the slogan to 20px */
+  font-style: italic; /* Makes the slogan italic */
+}
+
+.map { /* Styles the map */
+  width: 100%; /* Sets the width of the map to 100% */
+  height: 300px; /* Sets the height of the map to 300px */
+}
+
+.homeContainer { /* Makes the three columns on the home page */
+  display: grid; /* Makes the homeContainer a grid */
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* Makes the homeContainer have 3 columns */
+  grid-gap: 20px; /* Adds a gap of 20px between the columns */  
+}
+
+.socials { /* Styles the social media images */
+  width: auto; /* Sets the width of the social media images to auto */
+  height: 300px; /* Sets the height of the social media images to 300px */
+}
+
+
+ul { /* Styles the list of social media links */
+  display: flex; /* Makes the list of social media links a flex box */
+  flex-direction: column; /* Makes the list of social media links a column */
+  align-items: center; /* Centers the items of the list of social media links */
+  padding: 0; /* Removes the padding from the list of social media links */
+  margin: 0; /* Removes the margin from the list of social media links */
+  list-style-type: none; /* Removes the bullet points from the list of social media links */
+}
+
+li {
+  text-align: center; /* Centers the list of social media links */
+}
+
+
+/* About */
+
+.MTTPhoto { /* Styles the Meet The Team Photos */
+  padding: 10px; /* Adds padding of 10px to the MTTPhoto */
+}
+
+.AboutUsTop{ /* Styles the About Us Top which has the information about the business */
+  text-align: center; /* Centers the About Us Top */
+}
+
+hr{ /* Styles the horizontal rule */
+  border: 2px solid #000; /* Makes the horizontal rule thicker*/
+}
+
+.AboutUsBottom { /* Styles the About Us Bottom which has the Meet The Team section */
+  display: grid; /* Makes the About Us Bottom a grid */
+  grid-template-columns: 20% 80%; /* Makes the About Us Bottom have 2 columns, one for the photo one for the bio */
+  grid-gap: 20px; /* Adds a gap of 20px between the columns */
+  margin: 40px auto; /* Adds a margin of 40px to the top and bottom of the About Us Bottom and auto to the left and right of the About Us Bottom to center it */
+}
+
+/* Products */
+
+.rrp{ /* Styles the rrp */
+  text-decoration: line-through;  /* Adds a line through the rrp */
+  color: #ff0000; /* Makes the rrp red */
+  font-size: 15px; /* Sets the font size of the rrp to 15px so it's smaller than the price */
+}
+
+.productContainer { /* Styles the product container */
+  display: grid; /* Makes the product container a grid */
+  grid-template-columns: repeat(3, 1fr); /* Makes the product container have 3 columns */
+  grid-gap: 30px; /* Adds a gap of 30px between the columns */
+  margin: 50px auto; /* Adds a margin of 50px to the top and bottom of the product container and auto to the left and right of the product container to center it */
+  max-width: 1200px; /* Sets the maximum width of the product container to 1200px */
+}
+
+.product { /* Styles each product */
+  display: flex; /* Makes the product a flex box */
+  flex-direction: column; /* Makes the product a column */
+  align-items: center; /* Centers the items of the product */
+  text-align: center; /* Centers the text of the product */
+}
+
+.productImage{ /* Styles each product's image */
+  width: auto; /* Sets the width of the product's image to auto */
+  height: 225px; /* Sets the height of the product's image to 225px */
+}
+
+
+.price{ /* Styles the price */
+  font-size: 20px; /* Sets the font size of the price to 20px */
+  font-weight: bold; /* Makes the price bold */
+  color: #428e3d; /* Makes the price green */
+}
+
+/* Contact us */
+
+.contactForm{ /* Styles the contact form */
+  text-align: center; /* Centers the contact form */
+  font-size: 150%; /* Sets the font size of the contact form to 150% */
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+ 
+
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+ 
+
+  
+
+  
+  
+  
+  
+
+  
+  
